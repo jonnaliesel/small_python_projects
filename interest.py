@@ -1,21 +1,7 @@
-# coding=utf-8
-
 def countYourSavings() :
-    # print: investerat belopp
-    print('Hur mycket vill du investera?')
-    investment = float(input())
-    print(investment)
+    investment = float(input('\nHow much do you want to invest? '))
+    annualReturn = float(input('How many percent is the anual return? ' ))/100
+    years = int(input('How many years will you save? '))
 
-    # input för att ta aarsavkastning som  input från user
-    print('Hur många procent är årsavkastning?')
-    annualReturn = float(input())/100
-    print(annualReturn)
-
-    # print: antal år
-    print('Hur många år vill du spara?')
-    years = int(input())
-    print(years)
-
-    # investerat belopp x (1+årsavksatning)^antal år
     finalReturn = investment * (1 + annualReturn) ** years
-    print('Din besparing kommer efter ' + str(years) + ' år vara ' + str(finalReturn) + 'kr')
+    print('Your savings after ' + str(years) + ' years will be ' + str(int(finalReturn)) + ' SEK')
