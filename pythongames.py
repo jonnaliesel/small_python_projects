@@ -9,10 +9,12 @@ first_game = True
 invalid_answer = False
 
 while True :
-    # if not first_game :
-    #     another_game = input('Good job! Wanna play another game? y/n ')
-    #     if another_game != 'y' :
-    #         quit()
+    if not first_game :
+        another_game = input('\nGood job! Wanna play another game? y/n ')
+
+        if another_game != 'y' :
+            print('Thanks, bye!')
+            quit()
 
     if not invalid_answer :
         print('\nWhat game do you want to play?\n1. Numbersgame 2. Count your savings')
