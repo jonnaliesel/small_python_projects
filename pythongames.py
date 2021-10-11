@@ -3,11 +3,11 @@
 #Games
 from numbergame import numbersgame
 from interest import countYourSavings
+from highscore import save_highscore
 
 print('Welcome to Python Game Central!')
 first_game = True
 invalid_answer = False
-highscores = {1: {}}
 
 while True :
     if not first_game :
@@ -27,10 +27,7 @@ while True :
         highscore = numbersgame()
 
         if highscore:
-            user_name = str(list(highscore.keys())[0])
-            score = int(list(highscore.values())[0])
-            highscores[1][user_name] = score
-            print(highscores[1])
+            save_highscore(game, highscore)
         
     elif game == 2 :
         countYourSavings()

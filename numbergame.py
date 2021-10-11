@@ -35,7 +35,6 @@ def numbersgame() :
                 user_name = input('Please enter your name: ')
                 return {user_name: tries}
             else: return False
-            break
 
 # TODO: 
 # Highscore
