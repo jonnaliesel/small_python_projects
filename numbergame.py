@@ -3,8 +3,6 @@ import random
 def numbersgame() :
 
     num = random.randint(1, 100)
-    print(num)
-
     tries = 0
     guess = int(input('\nGuess a number between 1 and 100: \nYou have 10 tries to get it right ;) '))
 
