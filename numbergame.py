@@ -34,7 +34,7 @@ def numbersgame() :
                 if save_highscore.lower() == 'y':
                     user_name = input('Please enter your name: ')
                     return {user_name: tries}
-                else: return
+                else: return False
 
 # TODO: 
 # Highscore
