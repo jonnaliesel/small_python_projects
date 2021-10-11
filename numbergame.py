@@ -29,12 +29,13 @@ def numbersgame() :
 
             else:    
                 print(f'\nGood job, you got it right in just {tries} try!')
-                save_highscore = input(f'Wanna save your score? y/n ')
-                    
-                if save_highscore.lower() == 'y':
-                    user_name = input('Please enter your name: ')
-                    return {user_name: tries}
-                else: return False
+            save_highscore = input(f'Wanna save your score? y/n ')
+                
+            if save_highscore.lower() == 'y':
+                user_name = input('Please enter your name: ')
+                return {user_name: tries}
+            else: return False
+            break
 
 # TODO: 
 # Highscore
