@@ -1,8 +1,8 @@
-import random
+from random import randint
 
 def numbersgame() :
 
-    num = random.randint(1, 10)
+    num = randint(1, 10)
     print(f'\nCheet: {num}')
     tries = 0
     guess = int(input('\nGuess a number between 1 and 10: \nYou have 10 tries to get it right ;) '))
