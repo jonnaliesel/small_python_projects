@@ -10,7 +10,10 @@ def numbersgame() :
         diff = num - guess
         if diff == 0 and tries < 9:
             tries += 1
-            print(f'\nGood job, you got it right in just {tries} tries!')
+            if(tries > 1):
+                print(f'\nGood job, you got it right in just {tries} tries!')
+            else:    
+                print(f'\nGood job, you got it right in just {tries} try!')
             break
             
         elif diff > 0 and tries < 9:
